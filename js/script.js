@@ -32,7 +32,6 @@ function deactivateAllNAv() {
     }
 }
 function toggleContent(id) {
-    console.log(id);
     var contentElement = dictContentElements[id];
     var navElement = dictNavElements[id];
     
