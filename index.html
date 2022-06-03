@@ -10,7 +10,8 @@
     <meta name="description" content="Mathieu Chanavat's personal page">
     <link rel="stylesheet" href="css/style.css">
     
-    
+    <script type="text/javascript" src="js/script.js"></script>
+
     <!-- Facebook Open Graph -->
     <meta name="og:description" content="Mathieu Chanavat's personal page">
     <meta name="og:title" content="Mathieu Chanavat">
@@ -33,9 +34,9 @@
 
     <nav class="navigation">
       <ul class="navigation__list navigation__list--inline">
-        <li class="navigation__item"><a href="index.html" class="navigation__link navigation__link--is-active">About me</a></li>
-        <li class="navigation__item"><a href="work.html" class="navigation__link">Work</a></li>
-        <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+        <li class="navigation__item"><a href="#" id="nav_about" class="navigation__link navigation__link--is-active" onclick='toggleContent("about");'>About me</a></li>
+        <li class="navigation__item"><a href="#" id="nav_work" class="navigation__link" onclick='toggleContent("work");'>Work</a></li>
+        <li class="navigation__item"><a href="#" id="nav_contact" class="navigation__link" onclick='toggleContent("contact");'>Contact</a></li>
       </ul>
     </nav>
 
@@ -47,17 +48,38 @@
 
   <div class="grid">
 
-    <h1>Mathieu Chanavat</h1>
-
+    <div id="content_about">
+      <h1>Mathieu Chanavat</h1>
     <p>
       <img class="profile-picture" width="200" height="200" src="files/me.jpeg" />
       I am a graduate student in math and computer science. My main interests are category theory, homotopy theory and their applications to computer science. I'm currently doing an intership under the supervision of Pierre-Louis Curien where I study generalizations in toposes of <a href="https://arxiv.org/abs/1611.02108">this paper</a> about cubical type theory and how we can give comptutational content to the univalence axiom. <b>I'll be interested in starting a PhD in a related area by fall 2023.</b>
     </p>
     <p>
       After three years of "classe préparatoire" (intense classes of math and physics), I went for three years at École Centrale de Lille were I studied general computer science, AI and data science. During these three years, I also obtained a bachelor and a master of mathematics, focused on probabilites and functional analysis. 
-      During the year 2021-2022, I was a studentat the <a href="https://master.math.univ-paris-diderot.fr/en/annee/m2-lmfi/">LMFI</a> Master where I developed my skills about theoretical computer science, category theory, homotopy theory, and logic in general. Here's my <a href="files/cv-06-22.pdf">CV</a>.
+      During the year 2021-2022, I was a student at the <a href="https://master.math.univ-paris-diderot.fr/en/annee/m2-lmfi/">LMFI</a> Master where I developed my skills about theoretical computer science, category theory, homotopy theory, and logic in general. Here's my <a href="files/cv-06-22.pdf">CV</a>.
     </p>
+    </div>
+
+    <div id="content_work" class="hidden">
+      <ol>
+        <li><b>Category theory in Coq (2022) <a href="https://github.com/Dwarfobserver/CategorySandbox">github</a></b>
+          <div>
+            Final project of the LMFI's course 'Functional programming and formal proofs in Coq' where a student and I (re)implemented basics of category theory in Coq.
+          </div>
+        </li>
+        <br>
+        <li><b>Loops of Csörgő Type and the AIM Conjecture (2021) <a href="files/masterthesis_loop.pdf">pdf</a></b>
+          <div>
+            Summer '21 internship. I worked on the AIM conjecture and tried to develop a comptutational approach to find Csörgő loops (a certain kind of non-assiociative structure) of size less than 128. Interestinlgy enough, the AIM conjecture was solved (independantly of me!) by Michael Kinyon and Bob Veroff during my internship. Some of my code can be found <a href="https://github.com/mchanavat/loopy">here</a>.
+          </div>
+        </li>
+    </div>
+
+    <div id="content_contact" class="hidden">
+      <p>You can send me an email at: mathieu [dot] chanavat [at] gmail.com. My pronoun are they/them.</p>
+    </div>
   </div>
+    
   <div class="footer-basic">
     <footer>
         <p class="copyright">Mathieu Chanavat © 2022</p>
