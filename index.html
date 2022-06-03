@@ -5,13 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
     
     
     <meta name="description" content="Mathieu Chanavat's personal page">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="Mathieu Chanavat RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="http://mchanavat.github.io/css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     
     
     <!-- Facebook Open Graph -->
@@ -30,46 +27,42 @@
     
 </head>
 <body>
-    <div class="wrapper">
-      <div style="padding-bottom:20px;" class="container content">
+<header class="header sticky sticky--top js-header">
 
-        <h2 id="about-me">About Me</h2>
-        <div>
-          <img class="profile-picture" width="142" height="181" src="files/me.png" />
-          <br>
-          I am a graduate student in math and computer science. My main are category theory, homotopy theory and their application to computer science. I'm currently doing an intership under the supervision of Pierre-Louis Curien about <a href="https://arxiv.org/abs/1904.07004">this paper</a> that shows how oo-topos can interpret homotopy type theory. <b>I'll be interested in starting a PhD in this area by fall 2023.</b>
-        </div>
-        <br>
-        <div>You can contact me via email (he/him): mathieu.chanavat@gmail.com</div>
+  <div class="grid">
 
-        <h2 id="education">Education</h2>
-        <div>
-          After 3 years of "classe préparatoire" (intense lessons of math and physics), I went for three years at École Centrale Lille were I studied general computer science, AI and data science. During these three years, I also obtained a bachelor and a master of mathematics, focused on probailites and functional analysis. 
-          During the year 2021-2022, I was at the <a href="https://master.math.univ-paris-diderot.fr/en/annee/m2-lmfi/">LMFI</a> master where I developed my skills about theoretical computer science, category theory, homotopy theory, and logic in general.  
-        </div>
-        <br>
-        <div>Here's a <a href="files/cv_04-22.pdf">CV</a></div>
-        
+    <nav class="navigation">
+      <ul class="navigation__list navigation__list--inline">
+        <li class="navigation__item"><a href="index.html" class="navigation__link navigation__link--is-active">About me</a></li>
+        <li class="navigation__item"><a href="work.html" class="navigation__link">Work</a></li>
+        <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
 
-        <h2 id="previous-work">Previous work</h2>
-        <ol>
-          <li><b>Category theory in Coq <a href="https://github.com/Dwarfobserver/CategorySandbox">github</a></b>
-            <div>
-              Final project of the LMFI's course 'Functional programming and formal proofs in Coq' where a student and I (re)implemented basics of category theory in Coq.
-            </div>
-          </li>
-          <br>
-          <li><b>Loops of Csörgő Type and the AIM Conjecture <a href="files/masterthesis_loop.pdf">pdf</a></b>
-            <div>
-              Summer '21 internship. I worked on the AIM conjecture and tried to develop comptutational approach to find Csörgő loops (a certain kind of non-assiociative structure) of size less than 128. Interestinlgy enough, the AIM conjecture was solved (independantly of me!) by Michael Kinyon and Bob Veroff during my internship. Some of the code can be found <a href="https://github.com/mchanavat/loopy">here</a>
-            </div>
-          </li>
-        </ol>
+  </div>
 
-      </div>
-    </div>
-    
+</header>
+
+<main class="main">
+
+  <div class="grid">
+
+    <h1>Mathieu Chanavat</h1>
+
+    <p>
+      <img class="profile-picture" width="200" height="200" src="files/me.jpeg" />
+      I am a graduate student in math and computer science. My main are category theory, homotopy theory and their application to computer science. I'm currently doing an intership under the supervision of Pierre-Louis Curien about <a href="https://arxiv.org/abs/1611.02108">this paper</a> about cubical type theory and how we can give comptutational content to the univalence axiom. <b>I'll be interested in starting a PhD in this area by fall 2023.</b>
+    </p>
+    <p>
+      After 3 years of "classe préparatoire" (intense lessons of math and physics), I went for three years at École Centrale Lille were I studied general computer science, AI and data science. During these three years, I also obtained a bachelor and a master of mathematics, focused on probabilites and functional analysis. 
+      During the year 2021-2022, I was at the <a href="https://master.math.univ-paris-diderot.fr/en/annee/m2-lmfi/">LMFI</a> master where I developed my skills about theoretical computer science, category theory, homotopy theory, and logic in general. Here's a <a href="files/cv_04-22.pdf">CV</a>
+    </p>
+  </div>
+  <div class="footer-basic">
     <footer>
-      <div class="copyright">Copyright &copy; 2022 Mathieu Chanavat</div>
+        <p class="copyright">Mathieu Chanavat © 2022</p>
     </footer>
+  </div>
+</main>
+
 </body>
