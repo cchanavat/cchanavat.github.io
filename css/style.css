@@ -1,3 +1,9 @@
+html, body {
+  margin:0;
+  padding:0;
+
+}
+
 /* helpers/grid.css */
 
 .grid {
@@ -44,13 +50,13 @@
     line-height: 1.75;
     margin: 0;
     min-height: 100vh;
+    background-color: ;
   }
   
   /* layout/header.css */
   
   .header {
-    background-color: #fff;
-    padding-top: 1em;
+    /* background-color: #fff; */
     padding-bottom: 1em;
   }
   
@@ -78,10 +84,17 @@
   /* layout/main.css */
   
   .main {
-    padding-top: 6em;
+    padding-top: 1em;
     padding-bottom: 6em;
+    
   }
   
+  /* main content */
+  #grid_content {
+    text-align: justify;
+    padding: 2em;
+  }
+
   /* modules/headline.css */
   
   h1 {
@@ -130,7 +143,7 @@
 
   .footer-basic {
     padding:40px 0;
-    background-color:#ffffff;
+    /*background-color:#ffffff;*/
     color:#4b4c4d;
   }
   
@@ -138,7 +151,6 @@
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
     margin-bottom:0;
   }
   
