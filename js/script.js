@@ -5,9 +5,9 @@ var dictNavElements;
 
 window.onload = function() {
     dictContentElements = {
-        "about": document.getElementById("content_about"),
-        "work": document.getElementById("content_work"),
-        "contact": document.getElementById("content_contact"),
+        "about": document.getElementById("about"),
+        "work": document.getElementById("work"),
+        "contact": document.getElementById("contact"),
     };
     dictNavElements = {
         "about": document.getElementById("nav_about"),
