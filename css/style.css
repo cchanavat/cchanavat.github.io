@@ -1,7 +1,7 @@
 html, body {
   margin:0;
   padding:0;
-
+  background-color: #ffcccb;
 }
 
 /* helpers/grid.css */
@@ -55,7 +55,7 @@ html, body {
   /* layout/header.css */
   
   .header {
-    background-color: #fff;
+    background-color: #ffcccb;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
   }
