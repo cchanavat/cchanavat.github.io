@@ -154,3 +154,6 @@ html, body {
     margin-bottom:0;
   }
   
+  li {
+    margin: 10px 0;
+  }
