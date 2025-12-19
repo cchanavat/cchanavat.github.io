@@ -1,62 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Clémence Chanavat</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <meta name="description" content="Clémence Chanavat's personal page">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="files/ico.png" />
-
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <!-- Facebook Open Graph -->
-    <meta name="og:description" content="Clémence Chanavat's personal page">
-    <meta name="og:title" content="Clémence Chanavat">
-    <meta name="og:url" content="http://cchanavat.github.io/">
-    <meta name="og:type" content="article">
-    
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Clémence Chanavat">
-    <meta name="twitter:description" content="Clémence Chanavat's personal page">
-    <meta name="twitter:url" content="http://cchanavat.github.io/">
-    <meta name="twitter:image" content="">
-
+  <title>Clémence Chanavat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<main class="main">
+<div class="container">
+  <nav>
+    <a class="selected" href="index.html">About</a>
+    <a href="publist.html">Research</a>
+    <a href="talks.html">Talks</a>
+    <a href="misc.html">Misc</a>
+  </nav>
 
-  <header class="header sticky sticky--top js-header">
 
-    <div class="grid">
-
-      <nav class="navigation">
-        <ul class="navigation__list navigation__list--inline">
-          <li class="navigation__item"><a href="#" id="nav_about" class="navigation__link navigation__link--is-active">About me</a></li>
-          <li class="navigation__item"><a href="publist.html" id="nav_work" class="navigation__link">Work</a></li>
-          <li class="navigation__item"><a href="contact.html" id="nav_contact" class="navigation__link">Contact</a></li>
-        </ul>
-      </nav>
-
+  <div class="content">
+  <h1 id="name" class="name">
+    Clémence Chanavat
+  </h1>
+    <div class="image-section">
+      <img src="./files/me.jpg" alt="Clémence Chanavat">
     </div>
-
-  </header>
-
-  <div class="grid" id="grid_content">
-
-    <div id="about">
-      <h1>Clémence Chanavat</h1>
+    <div class="text-section">
       <p>
-      <img class="profile-picture" width="264" height="370" src="files/me.jpg" />
-      I am a PhD student in math = computer science, at the <a href="https://compose.ioc.ee/">TallCat</a> lab in Tallinn, under <a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a>. I am developing the theory of (∞, n)-categories in the context of <a href="https://ncatlab.org/nlab/show/diagrammatic+set">diagrammatic sets</a>. My main interests are category theory, homotopy theory and their applications to computer science.
+        I am a 4th year PhD student at the <a href="https://compose.ioc.ee/">TallCat</a> lab in Tallinn, under <a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a>. 
+        I am currently developing the theory of (∞, n)-categories in the context of <a href="https://ncatlab.org/nlab/show/diagrammatic+set">diagrammatic sets</a>.
+        My main interests revolve around higher categorical structures, with an eye towards their applications in maths and computer science.
       </p>
+
+      <h2 id="contact-details">Contact details</h2>
+      <p class="contact">clemence [dot] chanavat [at] gmail [dot] com</p>
     </div>
-
-</main>
-
+  </div>
+</div>
 </body>
+</html>
