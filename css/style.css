@@ -1,23 +1,20 @@
 :root {
-  --primary1: #f8dede;  
+  --primary1: #faf3e1;  
   --primary2: #e4d7d7;  
-  --secondary1: #F9DFDF;  
-  --secondary2: #F5AFAF;  
+  --secondary1: #FBEFEF;  
+  --secondary2: #e499a7;  
   --secondary-strong: rgb(72, 65, 110);
 
-  --color-name: var(--strong-color);
-  --h2-color: rgb(72, 65, 110);
+  --color-name: var(--secondary-strong);
+  --h2-color: var(--secondary-strong);
 
   --background-color: var(--primary1);
   --container-color: var(--primary2);
-
   --nav-color: var(--secondary2);
-  --nav-text-color: var(--strong-color);
+  --nav-text-color: var(--secondary-strong);
   --nav-hover-color: var(--secondary1);
   --nav-hover-text-color: var(--secondary-strong);
-  
-  /* --text-color: var(--secondary-strong); */
-  /* --link-color: var(--secondary-strong); */
+
   --strong-color: var(--secondary-strong);
   --degree-color: var(--secondary-strong);
   
@@ -51,15 +48,20 @@ nav a {
   color: var(--nav-text-color);
   text-decoration: none;
   text-align: center;
-  padding: 11px 12px;
+  padding: 5px 12px;
   border-radius: 8px;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 nav a.selected {
-  background-color: var(--nav-hover-color) !important;
-  color: var(--nav-hover-text-color) !important;
+  text-decoration: underline;
+  /* background-color: var(--nav-hover-color) !important;
+  color: var(--nav-hover-text-color) !important; */
 }
 
 .content {
